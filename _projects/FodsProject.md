@@ -58,7 +58,7 @@ plt.grid(True)
 plt.show()
 ```
 
-{% include figure.liquid loading="eager" path="assets/img/HistogramOfActualTemp.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid loading="eager" path="assets/img/HIstogramOfActualTemp.png" title="example image" class="img-fluid rounded z-depth-1" %}
 
 >Mean Temperature = 31.61363 <br>
 >Median Temperature = 31.5 <br>
