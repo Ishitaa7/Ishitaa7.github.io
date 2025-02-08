@@ -9,8 +9,8 @@
   --global-code-bg-color: #{$code-bg-color-light};
   --global-text-color: #{$black-color};
   --global-text-color-light: #{$grey-color};
-  --global-theme-color: #{$purple-color};
-  --global-hover-color: #{$purple-color};
+  --global-theme-color: #{$pink-color};
+  --global-hover-color: #{$pink-color};
   --global-hover-text-color: #{$white-color};
   --global-footer-bg-color: #{$grey-color-dark};
   --global-footer-text-color: #{$grey-color-light};
@@ -41,6 +41,10 @@
   --global-danger-block-bg: #ffe0e0;
   --global-danger-block-text: #600;
   --global-danger-block-title: #c00;
+  --global-highlight-block: rgb(39, 57, 78);
+  --global-highlight-block-bg: #acb2b4;
+  --global-highlight-block-text: rgb(247, 240, 240);
+  --global-highlight-block-title: rgb(10, 10, 13);
 
   #light-toggle-system {
     padding-left: 10px;
@@ -111,7 +115,10 @@ html[data-theme="dark"] {
   --global-danger-block-bg: #ffe0e0;
   --global-danger-block-text: #600;
   --global-danger-block-title: #c00;
-
+  --global-highlight-block: rgb(20, 103, 204);
+  --global-highlight-block-bg: #427782;
+  --global-highlight-block-text: rgb(25, 22, 22);
+  --global-highlight-block-title: rgb(10, 10, 13);
   .only-light {
     display: none;
   }

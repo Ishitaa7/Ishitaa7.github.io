@@ -7,20 +7,20 @@ first_name: Ishita
 middle_name: 
 last_name: Raj
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+  Got something urgent? Gmail me—I'll respond quicker than a cat knocking stuff off a table!
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+   I'm all about diving deep into NLP and exploring ways to make AI feel more human—think less robot, more relatable. Whether it's teaching machines to understand us better or giving them a touch of personality, that's my jam. Stick around and let's decode the magic of language together!
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
   Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
+keywords: NLP, Language, Research # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://Ishitaa7.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
-last_updated: false # set to true if you want to display last updated in the footer
+last_updated: true # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 back_to_top: true # set to false to disable the back to top button
 
@@ -87,8 +87,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
-blog_description: a simple whitespace theme for academics
+blog_name: Side Quests # blog_name will be displayed in your blog page
+blog_description: A space for all the detours I've taken while navigating NLP and research. Let's be real—setting up an Mac can be a pain, with software compatibility issues lurking around every corner. That's why I've put together notes on making it all work, along with my thoughts on NLP, research paper summaries, and everything in between. 
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -147,7 +147,7 @@ collections:
   news:
     defaults:
       layout: post
-    output: true
+    output: false
     permalink: /:collection/:title/
   projects:
     output: true
@@ -159,9 +159,16 @@ announcements:
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
+  enabled: false
+  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
+  limit: 3 # leave blank to include all the blog posts
+
+latest_projects:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
+  
+
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
@@ -177,7 +184,7 @@ kramdown:
     span:
       line_numbers: false
     block:
-      line_numbers: false
+      line_numbers: true
       start_line: 1
 
 # Includes & excludes
@@ -267,8 +274,8 @@ jekyll-archives:
     tag: "/blog/tag/:name/"
     category: "/blog/category/:name/"
 
-display_tags: ["formatting", "images", "links", "math", "code", "blockquotes"] # these tags will be displayed on the front page of your blog
-display_categories: ["external-services"] # these categories will be displayed on the front page of your blog
+# display_tags: ["NLP", "images", "links", "math", "code", "blockquotes"] # these tags will be displayed on the front page of your blog
+# display_categories: ["external-services"] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
@@ -636,10 +643,11 @@ jekyll_get_json:
 
 jsonresume:
   - basics
-  - work
   - education
-  - publications
+  - experience
+  - research
   - projects
+  - publications
   - volunteer
   - awards
   - certificates

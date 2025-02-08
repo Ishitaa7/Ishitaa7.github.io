@@ -2,18 +2,18 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
+      value: Ishita Raj
     - name: Date of Birth
-      value: 14th March 1879
+      value: 4th March 2003
     - name: Languages
-      value: English, German
+      value: English, Hindi
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Dual Major
+      institution: Birla Institute of Technology and Science
+      year: 2021-2026
       description:
         - Description 1.
         - Description 2.
